@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="{{ url_for('update_user') }}" method="POST">
+        <input type="text" id="old_username_id" name="old_username" placeholder="old_username">
+        <input type="text" id="old_password_id" name="old_password" placeholder="old_password"></br>
+        <input type="text" id="new_username_id" name="new_username" placeholder="new_username">
+        <input type="text" id="new_password_id" name="new_password" placeholder="new_password"></br>
+        <input type="submit">
+    </form>
+</body>
+</html>

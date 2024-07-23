@@ -1,0 +1,12 @@
+from tkinter import Tk, Canvas, Button
+new_window = Tk()
+canvas = Canvas(new_window, width=1000, height=1000, bg="white", cursor="arrow")
+Button(text="красный", bg="red").pack()
+Button(text="оранжевый", bg="orange").pack()
+Button(text="жёлтый", bg="yellow").pack()
+Button(text="зелёный", bg="green").pack()
+Button(text="голубой", bg="#007dff").pack()
+Button(text="синий", bg="blue").pack()
+Button(text="фиолетовый", bg="violet").pack()
+canvas.pack()
+new_window.mainloop()

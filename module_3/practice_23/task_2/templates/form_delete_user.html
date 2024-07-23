@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="{{url_for('delete_user')}}" method="POST">
+        <input type="text" id="username_id" name="username" placeholder="username">
+        <input type="text" id="password_id" name="password" placeholder="password">
+        <button type="submit">Delete user</button>
+    </form>
+</body>
+</html>

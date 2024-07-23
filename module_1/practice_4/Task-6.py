@@ -1,0 +1,20 @@
+players = [["Игрок1", 0, 0], ["Игрок2", 0, 0]]
+players[0][0] = input("Имя первого игрока ").title()
+players[0][1] = int(input(f"Введите число которое загадал {players[0][0]} "))
+players[0][2] = input("Чёт или нечет? ").lower()
+players[1][0] = input("Имя второго игрока ").title()
+players[1][1] = int(input(f"Введите число которое загадал {players[1][0]} "))
+players[1][2] = input("Чёт или нечет? ").lower()
+sum1 = players[0][1]+players[1][1]
+ans = str(sum1%2)
+ans = ans.replace("0", "чёт")
+ans = ans.replace("1", "нечет")
+players[0][2] = players[0][2].replace(ans, "угадал")
+players[0][2] = players[0][2].replace("нечет", "не угадал")
+players[0][2] = players[0][2].replace("чёт", "не угадал")
+players[1][2] = players[1][2].replace(ans, "угадал")
+players[1][2] = players[1][2].replace("нечет", "не угадал")
+players[1][2] = players[1][2].replace("чёт", "не угадал")
+print(players)
+print(f'''{players[0][0]}-{players[0][2]}
+{players[1][0]}-{players[1][2]}''')
